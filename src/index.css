@@ -1,7 +1,3 @@
-:root {
-  --text-shadow-color: #ff9c99;
-  --text-main-color: #d74742;
-}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,6 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0a3d62;
 }
 
 code {
@@ -23,39 +20,52 @@ code {
 }
 
 h1 {
-  color: var(--text-main-color);
-  font-family: "Rouge Script", cursive;
-  font-size: 130px;
-  font-weight: normal;
-  line-height: 48px;
-  margin: 0 0 50px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 20px;
   text-align: center;
   text-shadow: 1px 1px 2px var(--text-shadow-color);
+  font-size: 5vw;
 }
 
 p {
-  color: #ffffff;
-  font-family: "Carme", sans-serif;
-  font-size: 16px;
+  font-size: 3em;
+  font-weight: 100;
+  color: white;
+  padding: 10px;
+  width: 400px;
+  text-shadow: 0 0 20px #0eea9d;
 }
 
 .container {
-  margin: auto;
-  max-width: 1048px;
-  height: 100vh;
+  max-width: 100vw;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.split_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+  margin: 10px;
+}
 .timer__wrapper {
   border-radius: 24px;
-  background-color: var(--text-shadow-color);
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 10px;
 }
 .timer__display {
-  padding-left: 1.5em;
+  display: flex;
 }
 .timer__display > p {
   font-size: 5em;
@@ -65,8 +75,11 @@ p {
   display: flex;
   width: 30vw;
   padding: 1em;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+
+  margin: 10px;
+  max-width: 100vw;
 }
 .button {
   color: white;
@@ -83,6 +96,7 @@ p {
 }
 .button:hover {
   transform: scale(120%);
+  background: rgb(170, 164, 164);
 }
 .button:disabled {
   background-color: rgb(170, 164, 164);
@@ -91,7 +105,7 @@ p {
   border: 1px solid var(--text-main-color);
   background-color: var(--text-main-color);
 } */
-@media only screen and (max-device-width: 1280px) {
+/* @media only screen and (max-device-width: 1280px) {
   * {
     font-size: 0.9em;
   }
@@ -107,4 +121,4 @@ p {
     font-size: 3.8em;
     padding-left: 0;
   }
-}
+} */
